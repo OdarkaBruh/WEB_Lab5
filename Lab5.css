@@ -1,0 +1,28 @@
+body {
+    background-color: #dfdfdf;
+    font-size: 18px;
+}
+
+#root {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+.startArray {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 5px 25px;
+    font-size: 15px;
+}
+
+input {
+    font-size: 15px;
+    padding: 5px;
+}
+
+button {
+    font-size: 15px;
+    padding: 5px;
+}

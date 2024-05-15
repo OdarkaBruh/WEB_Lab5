@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="MainCSS.css">
+    <script src="MainScript.js"></script>
+    <title>Time right now is: </title>
+</head>
+<body id="root">
+    <h1>Лабораторна робота №5</h1>
+    <h3>Завдання №1</h3> 
+    <p>Створити одновимірний масив, кількість елементів якого задана користувачем. 
+        <br/><br/> 
+        Знайти максимальний серед парних елементів та мінімальний серед елементів з парними індексами. В масиві поміняти місцями знайдені максимальний та мінімальний елементи, надрукувати вхідний та вихідний масиви.
+        <br/><br/>  
+        Виконати сортування вихідного масиву за зростанням методом вставки.
+        Застосувати функції 
+    </p>      
+    <br/>  
+
+    <input type="number" min="1" max='200' id="arraySize" placeholder="Введіть розмір масиву" />
+    <button onclick="createArray()">Створити масив</button>
+    <p>Розмір:  <span id="printSizeOfArr"></span></p>
+    <div class="startArray">
+        <p id="printArr"></p>       
+    </div>       
+    <p> Максимум серед парних: <span id="arrayMax"> </span></p>  
+    <p> Мінімум серед непарних: <span id="arrayMin"></span> </p>
+    <div class="startArray">
+        <p id="swapArr"></p>       
+    </div>
+    <br />
+    <p>Відсортований: </p>
+    <div class="startArray">
+        <p id="sortArr"></p>        
+    </div>
+    <br /><br /><hr /><br /><br />
+    <h3>Завдання №2</h3>
+    <p>Валідація HTML-форми реєстрації користувача</p>
+    <p>Забезпечити перевірку елементів HTML-форми таких видів: ціле число, дійсне число, дата у форматі DD.MM.YYYY, однаковість даних у полях введення паролю (основне та перевірочне). Крім того, забезпечити перевірку введення обов‘язкових полів, помічених (*). </p>
+    <form action="" onsubmit="submitPage()">
+        <div>
+            <input id="checkInt" type="number" required></input>
+            <button onclick="checkIfInteger()" type="button">Перевірити чи ціле *</button>
+        </div> 
+        <br />
+        
+        <div>
+            <input id="checkNum" required></input>
+            <button onclick="checkIfNum()" type="button">Перевірити чи число *</button>
+        </div>
+        <br />
+        <div>
+            <input id="checkDate"></input>
+            <button onclick="checkIfDate()"type="button">Перевірити чи дата</button>
+        </div>  
+
+        <br /><hr /><br />
+
+        <div>
+            <label>Введіть пароль:</label><br />
+            <input type="password" id="password" minlength="2">
+            <br /><br />
+            <label>Введіть пароль знову:</label><br />
+            <input type="password" id="passwordCheck" minlength="2"><br /><br />
+            <button onclick="checkPasswords()" type="button">Перевірити праролі</button>
+        </div>
+        <br />
+        <br />
+        <input type="submit">
+    </form>
+ 
+    <div id="submitPage"></div>
+</body>   
+</html>    
